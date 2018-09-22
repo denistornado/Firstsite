@@ -1,0 +1,291 @@
+/*-----------------------------------------------------------------------------------*/
+/*  CSS Reset & Clear
+/*-----------------------------------------------------------------------------------*/
+
+html, body, div, span, figure, h1, h2, h3, h4, p, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, figure, figcaption, footer, header, hgroup, nav, section, img { margin: 0; padding: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+.clearfix:after { display: block; visibility: hidden; clear: both; height: 0; content: "."; }
+.clearfix { display: inline-block; } 
+.clearfix { display: block; }
+.none { display: none; }
+
+body {
+  line-height: 1;
+}
+ol, ul, dl {
+	margin: 0;
+	padding: 0;
+}
+
+
+img {
+	
+	-ms-interpolation-mode: bicubic;
+}
+a {
+	text-decoration: none;	
+	-moz-transition: all 0.15s linear;
+	-webkit-transition: all 0.15s linear;
+	-ms-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+a:hover, a:active, a:focus {
+	color: #EC5F24;	
+	outline: none;	
+}
+strong {
+	font-weight: bold;	
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+input[type="text"]:focus,
+input[type="submit"]:focus {
+ 	outline: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.relative {
+	position: relative;	
+}
+
+.absolute {
+	position: absolute;	
+}
+
+.syntaxhighlighter {
+	border: 1px solid #efefef;
+	padding: 20px 0;
+	background-color: #f8f9f9 !important;
+	max-height:100% !important;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Document Setup
+/*-----------------------------------------------------------------------------------*/
+
+html {
+	overflow: hidden;
+}
+
+html, body {
+	height: 100%;
+	background: none;
+}
+
+body {
+	background: #f8f9f9;
+	color: #414141;
+	font: 12px/16px 'Open Sans',sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Top Header Menu
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Main Global Site
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Main Global Site - Left Panel & Right Panel
+/*-----------------------------------------------------------------------------------*/
+
+#right-panel {
+	padding-left: 250px;
+	width: 100%;
+}
+
+#left-panel {
+	left: 0;
+	width: 150px;
+}
+
+#left-panel .panel-content {
+	background: #303030;
+}
+
+.collapsed #right-panel {
+    padding-left: 65px;
+}
+
+.collapsed #left-panel {
+	width: 65px;
+}
+
+.panel {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	height: 80%;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out; 
+}
+
+.panel-content {
+	width: 100% !important;
+}
+
+.panel-content.be-viewport {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.panel-content {
+    position: relative;
+    z-index: 1;
+	overflow: hidden;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+    height: 65%;	
+	background: #FFFFFF;
+}
+
+#slide-toggle {
+	position: relative;
+	top: 50%;
+	left: -7px;
+	z-index: 2;
+	display: block;
+	margin-top: -20px;
+	width: 20px;
+	height: 40px;
+	background: url(../img/slide-toggle.png) no-repeat;
+	text-indent: -99999px;
+	cursor: pointer;
+}
+
+.arrow-slide-left {
+	position: absolute;
+	top: 17px;
+	left: 5px;	
+	width: 6px;
+	height: 6px;
+	background: url(../img/arrow-slide.png) no-repeat;
+}
+
+.arrow-slide-right {
+	position: absolute;
+	top: 17px;
+	left: 5px;		
+	width: 6px;
+	height: 6px;
+	background: url(../img/arrow-slide.png) 0 -6px no-repeat;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Main Global Site - Left Panel Menu
+/*-----------------------------------------------------------------------------------*/
+
+#menu ul li {
+	list-style: none;	
+}
+
+.menu-label {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;	
+	width: 400px;
+	height: 60px;	
+	cursor: pointer;
+	display: inline-block;
+	
+}
+
+.menu-label.no-border {
+	border-top: none;	
+}
+
+.menu-label.no-border.active {
+	background: #FFF;
+}
+
+.section-menu-title {
+	display: block;
+	padding-left: 20px;
+	color: #A2ADB2;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out; 
+}
+
+.item-action-icon {
+	position: relative;
+	display: block;
+	opacity: 0.65;
+	font-size: 14px;
+	line-height: 50px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 26px;
+	color: #FFFFFF;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out; 
+}
+
+
+.menu-label:hover .section-menu-title,
+.menu-label:hover .item-action-icon  {
+	color: #FFFFFF;	
+}
+
+
+.menu-label.active .section-menu-title,
+.menu-label.active .item-action-icon {
+	color: #303030;	
+}
+
+.menu-label:hover .circle-icon,
+.menu-label.active .circle-icon {
+	color: #fff;
+	text-shadow: none;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background: #20a0dd;
+	opacity:0.7;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Main Global Site - Content Left Menu
+/*-----------------------------------------------------------------------------------*/
+
+.panel-container {
+	display: none;
+	border-bottom: 1px solid #D5D5D5;
+}
+
+/
+#footer {
+    position: absolute;
+    bottom: -53px;
+    left: -22px;
+    z-index: 2;
+    width: 120%;
+    height: 32px;
+    background: none repeat scroll 0 0 #242424;
+}
